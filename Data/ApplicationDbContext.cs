@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using DotnetC_.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotnetC_.Data
@@ -9,5 +10,6 @@ namespace DotnetC_.Data
             : base(options)
         {
         }
+        public DbSet <Employee> Employees { get; set; }
     }
 }
